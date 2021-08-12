@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Root from "./root";
+import Login from './components/login';
+import { Navbar } from 'react-bootstrap';
+import Login2 from './components/login2';
+import A from './deneme';
 
 function App() {
+  //const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Root/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+
+.carousel__container{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    height: 85%;
+    background: #f3f5f7;
+  }
+  .carousel__img{
+    object-fit: contain;
+    max-height: 583px;
+  }
+  
+  .carousel__div{
+    background: #f3f5f7;
+  }
+  
