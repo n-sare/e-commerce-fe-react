@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "../styles/signup.css"
-import { useDispatch, useSelector } from "react-redux";
+import "../styles/signup.module.css"
+import { useDispatch } from "react-redux";
 import { signupUser } from "../store/actions/userActions";
-import { Redirect, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function Signup(props) {
+export default function Signup() {
+    //States required to signup
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [email, setEmail] = useState("");
@@ -14,72 +13,75 @@ export default function Signup(props) {
     const [password, setPassword] = useState("");
     const [repeatedPassword, setRepeatedPassword] = useState("");
     const [warning, setWarning] = useState("");
-    
+
+    const history = useHistory();
     const dispatch = useDispatch();
-    const handleSubmit = (e) =>{
+
+    //Signing up method - dispatcing states to signupUser action
+    const handleSubmit = (e) => {
         e.preventDefault();
-        {password===repeatedPassword?(dispatch(signupUser(name, surname, email, phone, password))):(setWarning("Şifreler eşleşmiyor."))}
-        
+        if (password === repeatedPassword) {
+            dispatch(signupUser(name, surname, email, phone, password))
+            history.push("/login")
+        } else {
+            setWarning("Şifreler eşleşmiyor.")
+        }
+        { password === repeatedPassword ? (dispatch(signupUser(name, surname, email, phone, password))) : (setWarning("Şifreler eşleşmiyor.")) }
+
+
     }
     return (
         <div className="card bg-light">
-            <article className="card-body mx-auto" style={{maxWidth: "400px"}}>
-                <h4 className="card-title mt-3 text-center">Create Account</h4>
-                <p className="text-center">Get started with your free account</p>
-                <p>
-                    <a href="" className="btn btn-block btn-twitter"> <i className="fab fa-twitter"></i>   Login via Twitter</a>
-                    <a href="" className="btn btn-block btn-facebook"> <i className="fab fa-facebook-f"></i>   Login via facebook</a>
-                </p>
-                <p className="divider-text">
-                    <span className="bg-light">OR</span>
-                </p>
+            <article className="card-body mx-auto" style={{ maxWidth: "400px" }}>
+                <h4 className="card-title mt-3 text-center" style={{ color: "#FA1E0E", fontWeight: "bold" }}>Hesap Oluştur</h4>
+                <p className="text-center" style={{ color: "#FA1E0E" }}>Kendinize ücretsiz bir hesap oluşturun.</p>
+
+
                 <form onSubmit={handleSubmit}>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-user"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <input name="" className="form-control" placeholder="Ad" type="text" onChange={(e) => setName(e.target.value)}/>
+                        <input name="" className="form-control" placeholder="Ad" type="text" onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-user"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <input name="" className="form-control" placeholder="Soyad" type="text" onChange={(e) => setSurname(e.target.value)}/>
+                        <input name="" className="form-control" placeholder="Soyad" type="text" onChange={(e) => setSurname(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-envelope"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-envelope" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <input name="" className="form-control" placeholder="Email address" type="email" onChange={(e) => setEmail(e.target.value)}/>
+                        <input name="" className="form-control" placeholder="E-posta Adresi" type="email" onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-phone"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-phone" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <select className="custom-select" style={{maxWidth: "120px"}}>
-                            <option selected="">+90</option>
-                        </select>
-                        <input name="" className="form-control" placeholder="Phone number" type="text" onChange={(e) => setPhone(e.target.value)}/>
+
+                        <input name="" className="form-control" placeholder="Telefon Numarası" type="text" onChange={(e) => setPhone(e.target.value)} />
                     </div>
-                    
+
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-lock"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <input className="form-control" placeholder="Create password" type="password" onChange={(e) => setPassword(e.target.value)}/>
+                        <input className="form-control" placeholder="Parola" type="password" onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-lock"></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#FA1E0E" }}></i> </span>
                         </div>
-                        <input className="form-control" placeholder="Repeat password" type="password" onChange={(e) => setRepeatedPassword(e.target.value)}/>
-                        
-                        <p>{warning}</p>                    
+                        <input className="form-control" placeholder="Parola (Tekrar)" type="password" onChange={(e) => setRepeatedPassword(e.target.value)} />
+                        <hr></hr>
+                        <p>{warning}</p>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-primary btn-block"> Create Account  </button>
+                        <button type="submit" className="btn btn-block custom-btn-warning"> Hesap Oluşturun  </button>
                     </div>
-                    <p className="text-center">Have an account? <a href="">Log In</a> </p>
+                    <p className="text-center" style={{ color: "#BD2000" }}>Hesabınız var mı? <a href="/login" style={{ color: "#BD2000" }}>Giriş Yapın.</a> </p>
                 </form>
             </article>
         </div>

@@ -20,11 +20,8 @@
     z-index: 1;
 }
 
-.btn-facebook {
-    background-color: #405D9D;
-    color: #fff;
-}
-.btn-twitter {
-    background-color: #42AEEC;
-    color: #fff;
+
+.form-login{
+    margin-left: 10px;
+    margin-top: 1000px;
 }

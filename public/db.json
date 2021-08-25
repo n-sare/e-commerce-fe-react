@@ -20,8 +20,7 @@
         "lastname": "doe"
       },
       "phone": "1-570-236-7033",
-      "__v": 0,
-      "cart" : []
+      "__v": 0
     },
     {
       "address": {
@@ -44,7 +43,7 @@
       },
       "phone": "1-570-236-7033",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -67,7 +66,7 @@
       },
       "phone": "1-567-094-1345",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -90,7 +89,7 @@
       },
       "phone": "1-765-789-6734",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -113,7 +112,7 @@
       },
       "phone": "1-956-001-1945",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -136,7 +135,7 @@
       },
       "phone": "1-678-345-9856",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -159,7 +158,7 @@
       },
       "phone": "1-123-943-0563",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -182,7 +181,7 @@
       },
       "phone": "1-478-001-0890",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -205,7 +204,7 @@
       },
       "phone": "1-678-456-1934",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -228,7 +227,7 @@
       },
       "phone": "1-104-001-4567",
       "__v": 0,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -250,7 +249,7 @@
       },
       "phone": "05535257648",
       "__v": 0,
-      "cart" : [],
+      "cart": [],
       "id": 12
     },
     {
@@ -274,7 +273,7 @@
       "phone": "05535257644",
       "__v": 0,
       "id": 13,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -297,7 +296,7 @@
       "phone": "2563535356",
       "__v": 0,
       "id": 14,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -320,7 +319,7 @@
       "phone": "2556669987",
       "__v": 0,
       "id": 15,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -343,7 +342,7 @@
       "phone": "5558887744",
       "__v": 0,
       "id": 16,
-      "cart" : []
+      "cart": []
     },
     {
       "address": {
@@ -366,7 +365,469 @@
       "phone": "6654437821",
       "__v": 0,
       "id": 17,
-      "cart" : []
+      "cart": []
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ghhjj@vkfmf.com",
+      "username": "",
+      "password": "123456",
+      "name": {
+        "firstname": "Sare",
+        "lastname": "Özkan"
+      },
+      "phone": "05535257678",
+      "__v": 0,
+      "id": 18
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ahmetbeyinceketi@outlook.com",
+      "username": "",
+      "password": "12345",
+      "name": {
+        "firstname": "Ahmet",
+        "lastname": "Bey"
+      },
+      "phone": "05535255869",
+      "__v": 0,
+      "id": 19
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ahmetbeyinceketi@outlook.com",
+      "username": "",
+      "password": "12345",
+      "name": {
+        "firstname": "Ahmet",
+        "lastname": "Bey"
+      },
+      "phone": "05535255869",
+      "__v": 0,
+      "id": 20
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "fksmdf@gkfdmkgfd.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "dsnjkfs",
+        "lastname": "sdfsdfs"
+      },
+      "phone": "5556668899",
+      "__v": 0,
+      "id": 21
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "fksmdf@gkfdmkgfd.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "dsnjkfs",
+        "lastname": "sdfsdfs"
+      },
+      "phone": "5556668899",
+      "__v": 0,
+      "id": 22
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ayseoz@outlook.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ayşe",
+        "lastname": "Öztürk"
+      },
+      "phone": "5554478963",
+      "__v": 0,
+      "id": 23
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ayseoz@outlook.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ayşe",
+        "lastname": "Öztürk"
+      },
+      "phone": "5554478963",
+      "__v": 0,
+      "id": 24
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ahmetyucedag@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ahmet",
+        "lastname": "Yücedağ"
+      },
+      "phone": "5895475896",
+      "__v": 0,
+      "id": 25
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ahmetyucedag@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ahmet",
+        "lastname": "Yücedağ"
+      },
+      "phone": "5895475896",
+      "__v": 0,
+      "id": 26
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ben@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "fdgfd",
+        "lastname": "fdsfs"
+      },
+      "phone": "5531479687",
+      "__v": 0,
+      "id": 27
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "ben@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "fdgfd",
+        "lastname": "fdsfs"
+      },
+      "phone": "5531479687",
+      "__v": 0,
+      "id": 28
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "denemedeneme@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Deneme",
+        "lastname": "Deneme"
+      },
+      "phone": "5565874123",
+      "__v": 0,
+      "id": 29
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "denemedeneme@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Deneme",
+        "lastname": "Deneme"
+      },
+      "phone": "5565874123",
+      "__v": 0,
+      "id": 30
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "zehraozkan@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Zehra",
+        "lastname": "Özkan"
+      },
+      "phone": "5568794356",
+      "__v": 0,
+      "id": 31
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "zehraozkan@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Zehra",
+        "lastname": "Özkan"
+      },
+      "phone": "5568794356",
+      "__v": 0,
+      "id": 32
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "cemreozkan@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Cemre",
+        "lastname": "Özkan"
+      },
+      "phone": "05535257789",
+      "__v": 0,
+      "id": 33
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "cemreozkan@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Cemre",
+        "lastname": "Özkan"
+      },
+      "phone": "05535257789",
+      "__v": 0,
+      "id": 34
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "benwyatt@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ben",
+        "lastname": "Wyatt"
+      },
+      "phone": "8895421478",
+      "__v": 0,
+      "id": 35
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "benwyatt@hotmail.com",
+      "username": "",
+      "password": "1234",
+      "name": {
+        "firstname": "Ben",
+        "lastname": "Wyatt"
+      },
+      "phone": "8895421478",
+      "__v": 0,
+      "id": 36
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "",
+      "username": "",
+      "password": "",
+      "name": {
+        "firstname": "",
+        "lastname": ""
+      },
+      "phone": "",
+      "__v": 0,
+      "id": 37
+    },
+    {
+      "address": {
+        "geolocation": {
+          "lat": "0",
+          "long": "0"
+        },
+        "city": "",
+        "street": "",
+        "number": 0,
+        "zipcode": "00000"
+      },
+      "email": "",
+      "username": "",
+      "password": "",
+      "name": {
+        "firstname": "",
+        "lastname": ""
+      },
+      "phone": "",
+      "__v": 0,
+      "id": 38
     }
   ],
   "products": [
@@ -529,6 +990,518 @@
       "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
       "category": "women's clothing",
       "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+    }
+  ],
+  "carts": [
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 16,
+          "quantity": 1
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 15,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 15,
+          "quantity": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 20,
+          "quantity": 1
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 15,
+          "quantity": 1
+        }
+      ],
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "products": [
+        {
+          "productId": 4,
+          "quantity": 1
+        }
+      ],
+      "id": 15
+    },
+    {
+      "userId": 23,
+      "products": [
+        {
+          "productId": "17",
+          "quantity": 1
+        }
+      ],
+      "id": 16
+    },
+    {
+      "userId": 23,
+      "products": [
+        {
+          "productId": 12,
+          "quantity": 1
+        }
+      ],
+      "id": 17
+    },
+    {
+      "userId": 23,
+      "products": [
+        {
+          "productId": 10,
+          "quantity": 1
+        }
+      ],
+      "id": 18
+    },
+    {
+      "userId": 23,
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "id": 19
+    },
+    {
+      "userId": 23,
+      "products": [
+        {
+          "productId": 4,
+          "quantity": 1
+        }
+      ],
+      "id": 20
+    },
+    {
+      "userId": 25,
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "id": 21
+    },
+    {
+      "userId": 25,
+      "products": [
+        {
+          "productId": 15,
+          "quantity": 1
+        }
+      ],
+      "id": 22
+    },
+    {
+      "userId": 25,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 23
+    },
+    {
+      "userId": 25,
+      "products": [
+        {
+          "productId": 20,
+          "quantity": 1
+        }
+      ],
+      "id": 24
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "id": 25
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 26
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 20,
+          "quantity": 1
+        }
+      ],
+      "id": 27
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "id": 28
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 20,
+          "quantity": 1
+        }
+      ],
+      "id": 29
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "id": 30
+    },
+    {
+      "userId": 29,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 31
+    },
+    {
+      "userId": 29,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 32
+    },
+    {
+      "userId": 29,
+      "products": [
+        {
+          "productId": 16,
+          "quantity": 1
+        }
+      ],
+      "id": 33
+    },
+    {
+      "userId": 29,
+      "products": [
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "id": 34
+    },
+    {
+      "userId": 29,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "id": 35
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 6,
+          "quantity": 1
+        }
+      ],
+      "id": 36
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 37
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 9,
+          "quantity": 1
+        }
+      ],
+      "id": 38
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 10,
+          "quantity": 1
+        }
+      ],
+      "id": 39
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 16,
+          "quantity": 1
+        }
+      ],
+      "id": 40
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 19,
+          "quantity": 1
+        }
+      ],
+      "id": 41
+    },
+    {
+      "userId": 27,
+      "products": [
+        {
+          "productId": 12,
+          "quantity": 1
+        }
+      ],
+      "id": 42
+    },
+    {
+      "userId": 33,
+      "products": [
+        {
+          "productId": 17,
+          "quantity": 1
+        }
+      ],
+      "id": 43
+    },
+    {
+      "userId": 33,
+      "products": [
+        {
+          "productId": 9,
+          "quantity": 1
+        }
+      ],
+      "id": 44
+    },
+    {
+      "userId": 35,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "id": 45
+    },
+    {
+      "userId": 35,
+      "products": [
+        {
+          "productId": 9,
+          "quantity": 1
+        }
+      ],
+      "id": 46
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": "10",
+          "quantity": 1
+        }
+      ],
+      "id": 47
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": "16",
+          "quantity": 1
+        }
+      ],
+      "id": 48
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": "2",
+          "quantity": 1
+        }
+      ],
+      "id": 49
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 18,
+          "quantity": 1
+        }
+      ],
+      "id": 50
+    },
+    {
+      "userId": 31,
+      "products": [
+        {
+          "productId": 8,
+          "quantity": 1
+        }
+      ],
+      "id": 51
     }
   ]
 }

@@ -1,28 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
 
-*,
+/* *,
 *::before,
 *::after{
   box-sizing: border-box;
   margin: 0;
   padding:0;
-}
+} */
 
 body{
   font-family: "Noto Sans", sans-serif;
   background-color: #f3f5f7;
-}
+} 
 
-.wrapper{
+/* .wrapper{
   margin: 2rem;
   display: grid;
   gap:1rem;
   grid-template-columns:1fr;
   justify-content: center;
-}
+} */
 
-.prodcard{
+.card{
   box-shadow: 0 0 10px 5px #e1e5ee;
   border-radius: 0.2rem;
   min-width: 28rem;
@@ -49,6 +49,8 @@ body{
   text-overflow: ellipsis;
   white-space: nowrap; 
   display: block;
+  text-decoration: none;
+
 }
 
 .card__price{
@@ -60,7 +62,7 @@ body{
   border:none;
   border-top: 1px, solid #e1e5ee;
   background-color: transparent;
-  font-family: inherit;
+  /* font-family: inherit; */
   font-size: 1rem;
   font-weight: bold;
   color: inherit;

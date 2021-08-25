@@ -9,7 +9,7 @@ const DEFAULT_STATE = {
     switch (action.type) {
       case LOGIN:
         //console.log(action.payload)
-        localStorage.setItem("isLoggedIn", !!Object.keys(action.payload).length)
+        localStorage.setItem("isLoggedIn", !!Object.values(action.payload).length)
         return { ...state, user: action.payload, isLoggedIn: !!Object.keys(action.payload).length }
       
        case LOGIN_ERROR:

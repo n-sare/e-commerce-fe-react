@@ -1,9 +1,10 @@
 
 .carousel__container{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
     height: 85%;
-    background: #f3f5f7;
+    background: white;
   }
   .carousel__img{
     object-fit: contain;
@@ -11,6 +12,6 @@
   }
   
   .carousel__div{
-    background: #f3f5f7;
+    background: white;
   }
   

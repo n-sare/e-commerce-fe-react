@@ -1,18 +1,16 @@
-import {LOGIN, LOGIN_ERROR, SIGNUP, SIGNUP_ERROR} from "../constants/userConstants";
+import { LOGIN, LOGIN_ERROR } from "../constants/userConstants";
 import axios from "axios";
-import rootReducer from "../reducers";
 
+import { getUserCart } from "./cartActions";
 
-export function setCurrentUser(user) {
-    return {
-      type: LOGIN,
-      user
-    };
-  }
+//Dispatching user 
+export const setCurrentUser = (user) => (dispatch) => {
+  dispatch({ type: LOGIN, payload: user })
 
-export const signupUser = (name, surname, email, phone, password) => async(dispatch) =>{
-
-  let user=  {
+}
+//Signing up user
+export const signupUser = (name, surname, email, phone, password) => async (dispatch) => {
+  let user = {
     address: {
       geolocation: {
         lat: "0",
@@ -34,37 +32,35 @@ export const signupUser = (name, surname, email, phone, password) => async(dispa
     __v: 0
   }
   axios.post('http://localhost:3000/users', user)
-  .then(()=>{ localStorage.setItem("user", JSON.stringify(user));
-              dispatch({type: LOGIN, payload: user})
-            })
-  .catch(error =>{ dispatch({type: LOGIN_ERROR, payload: error})});
-  
+
+    .catch(error => { dispatch({ type: LOGIN_ERROR, payload: error }) });
+
 }
 
-export const loginUser =  (email, password) => async(dispatch) => {
-      //const {email, password} = getState().rootReducer;
-    try {
-          axios.get("http://localhost:3000/users").then(response => response.data)
-          .then(responseData => {
-            const userData = responseData.filter(user => user.email===email&&user.password===password);
-            localStorage.setItem("user", JSON.stringify(userData));
-            dispatch({type: LOGIN, payload: userData})
-            })
-         
-      } catch (error) {
-          dispatch({
-            type: LOGIN_ERROR,
-            payload: error,
-          })
-      }
+//action to login user
+export const loginUser = (email, password) => async (dispatch) => {
+  try {
+    axios.get("http://localhost:3000/users").then(response => response.data)
+      .then(responseData => {
+        const userData = responseData.filter(user => user.email === email && user.password === password);
+        localStorage.setItem("user", JSON.stringify(userData));
+        dispatch({ type: LOGIN, payload: userData })
+        dispatch(getUserCart(userData[0].id))
+
+      })
+
+  } catch (error) {
+    dispatch({
+      type: LOGIN_ERROR,
+      payload: error,
+    })
   }
+}
 
 
 export const logoutUser = () => {
   return dispatch => {
-    //localStorage.clear();
-    localStorage.removeItem("user")
-    dispatch(setCurrentUser({}));
+    dispatch(setCurrentUser([]));
   }
 }
 

@@ -1,77 +1,81 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import "../styles/productDetail.css"
-import { useParams } from "react-router";
+import { withRouter } from "react-router";
 import NavbarComponent from "./navBar"
 import Footer from "./footer"
+import { useHistory } from "react-router-dom";
+import { addToCard } from "../store/actions/cartActions";
+import { getUserCart } from "../store/actions/cartActions";
 
-const ProductDetail =(props) =>{
-    
-    const productList= useSelector(state => state.products);
-    
-    const { products } = productList;
-    const {id} = useParams();
-    let selectedProduct = products.filter(p =>p.id==id)
-    
-    
+//This component shows detail about single product
+const ProductDetail = (props) => {
 
-return (
+    const productList = useSelector(state => state.products);
+    const { products, loading } = productList;
 
-   <div>
-       <NavbarComponent/>
-    <div className="container">
-    <div className="card">
-        <div className="container-fliud">
-            <div className="row">
-                <div className="preview col-md-6">
-                    
-                    <div className="preview-pic tab-content">
-                      <div className="tab-pane active" id="pic-1"><img src={selectedProduct[0].image} /></div>
-                    </div>
-                    <ul className="preview-thumbnail nav nav-tabs">
-                      <li className="active"><a data-target="#pic-1" data-toggle="tab"><img src={selectedProduct[0].image} /></a></li>
-                      <li><a data-target="#pic-2" data-toggle="tab"><img src={selectedProduct[0].image} /></a></li>
-                      <li><a data-target="#pic-3" data-toggle="tab"><img src={selectedProduct[0].image} /></a></li>
-                      <li><a data-target="#pic-4" data-toggle="tab"><img src={selectedProduct[0].image} /></a></li>
-                      <li><a data-target="#pic-5" data-toggle="tab"><img src={selectedProduct[0].image} /></a></li>
-                    </ul>
-                    
-                </div>
-                <div className="details col-md-6">
-                    <h3 className="product-title">{selectedProduct[0].title}</h3>
-                    <div className="rating">
-                        <div className="stars">
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star checked"></span>
-                            <span className="fa fa-star"></span>
-                            <span className="fa fa-star"></span>
+    const userInfo = useSelector(state => state.user);
+    const { user, isLoggedIn } = userInfo;
+
+    const dispatch = useDispatch();
+    const history = useHistory();
+
+
+    //props.match.params takes key from url, which is id in this case
+    let selectedProduct = products.filter(p => p.id == props.match.params.id)
+
+
+
+    const handleCart = (event) => {
+        //To trigger addToCart, login is mandatory 
+        event.preventDefault();
+        if (isLoggedIn) {
+            dispatch(addToCard(user[0].id, props.match.params.id));
+            dispatch(getUserCart(user[0].id));
+        } else {
+            history.push("/login");
+        }
+
+    }
+
+
+    return (
+
+        <div className="body">
+            <NavbarComponent />
+
+            {loading ? "Loading..." : <div className="container custom-container">
+                <div className="card card-productdetail">
+                    <div className="container-fliud">
+                        <div className="row">
+                            <div className="preview col-md-6">
+
+                                <div className="preview-pic tab-content">
+                                    <div className="tab-pane active" id="pic-1"><img className="img" src={selectedProduct[0].image} /></div>
+                                </div>
+
+
+                            </div>
+                            <div className="details col-md-6">
+                                <h3 className="product-title">{selectedProduct[0].title}</h3>
+
+                                <p className="product-description">{selectedProduct[0].description}</p>
+                                <h4 className="price text-center"> <span>{selectedProduct[0].price} TL</span></h4>
+
+
+                                <div className="action text-center">
+                                    <button className="add-to-cart btn custom-btn-warning" type="button" onClick={handleCart}>Sepete ekle</button>
+                                </div>
+                            </div>
                         </div>
-                        <span className="review-no">41 reviews</span>
-                    </div>
-                    <p className="product-description">{selectedProduct[0].description}</p>
-                    <h4 className="price">current price: <span>{selectedProduct[0].price}</span></h4>
-                    <p className="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
-                    <h5 className="sizes">sizes:
-                        <span className="size" data-toggle="tooltip" title="small">s</span>
-                        <span className="size" data-toggle="tooltip" title="medium">m</span>
-                        <span className="size" data-toggle="tooltip" title="large">l</span>
-                        <span className="size" data-toggle="tooltip" title="xtra large">xl</span>
-                    </h5>
-                   
-                    <div className="action">
-                        <button className="add-to-cart btn btn-default" type="button">Sepete ekle</button>
                     </div>
                 </div>
-            </div>
+            </div>}
+            <Footer />
         </div>
-    </div>
-</div>
-<Footer/>
-</div>
-);
+    );
 }
 
 
 
-export default ProductDetail;
+export default withRouter(ProductDetail);

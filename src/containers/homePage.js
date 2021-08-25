@@ -1,20 +1,19 @@
 import NavbarComponent from "../components/navBar";
 import Carousel from "../components/carousel";
-import CategoriesHomepage2 from "../components/categoriesHomepage2";
+import CategoriesHomepage from "../components/categoriesHomepage";
 import Footer from "../components/footer";
 
 function HomePage() {
-    //const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
-    return (
-      <div className="home-page">
-          <NavbarComponent/>
-          <Carousel/>
-          <CategoriesHomepage2/>
-          <Footer/>
-          
-      </div>
-    );
-  }
-  
-  export default HomePage;
-  
+  //HomePage Container - consists of Carousel and categorieshomepage
+  return (
+    <div className="home-page">
+      <NavbarComponent />
+      <Carousel />
+      <CategoriesHomepage />
+      <Footer />
+
+    </div>
+  );
+}
+
+export default HomePage;

@@ -3,16 +3,15 @@ import Footer from "../components/footer";
 import Signup from "../components/signup";
 
 function SignupPage() {
-    //const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
-    return (
-      <div className="home-page">
-          <NavbarComponent/>
-          <Signup/>
-          <Footer/>
-          
-      </div>
-    );
-  }
-  
-  export default SignupPage;
-  
+  //Signup container
+  return (
+    <div className="home-page">
+      <NavbarComponent />
+      <Signup />
+      <Footer />
+
+    </div>
+  );
+}
+
+export default SignupPage;

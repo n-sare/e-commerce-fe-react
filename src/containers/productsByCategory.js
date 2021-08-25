@@ -5,19 +5,18 @@ import ProductsCategory from "../components/productsCategory";
 
 
 function Products(props) {
-    //const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
-    const {categoryOfComponent}= props
+  //Products container
+  const { categoryOfComponent } = props
 
-    return (
+  return (
 
-      <div className="home-page">
-          <NavbarComponent/>
-          <ProductsCategory category={categoryOfComponent}/>
-          <Footer/>
-          
-      </div>
-    );
-  }
-  
-  export default Products;
-  
+    <div className="home-page">
+      <NavbarComponent />
+      <ProductsCategory category={categoryOfComponent} />
+      <Footer />
+
+    </div>
+  );
+}
+
+export default Products;
