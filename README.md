@@ -35,6 +35,8 @@ npm start
 ### Home Page
 ![image](https://user-images.githubusercontent.com/34991897/131100744-392eaac5-e0cf-4d80-91ce-5947022cb59c.png)
 ![image](https://user-images.githubusercontent.com/34991897/131100819-928f2935-d22f-4d22-a342-9a297dc54f61.png)
+![image](https://user-images.githubusercontent.com/34991897/131101914-9d51db15-8734-445d-8483-3dcd709d4d00.png)
+
 
 ### Products Page
 ![image](https://user-images.githubusercontent.com/34991897/131100978-ba9adfa4-b052-4291-9692-0fe43bbb415e.png)
