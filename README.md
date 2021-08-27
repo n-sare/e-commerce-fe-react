@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# MeShop!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MeShop! is a frontend e-commerce project that allows users to sign up and add products they like to cart.
 
-## Available Scripts
+[Fake Store Api](https://www.npmjs.com/package/download) is used as data. FakeStoreAPI is a free online REST API that provides you fake e-commerce JSON data.
 
-In the project directory, you can run:
 
-### `npm start`
+## Installation and Usage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Use the package manager [npm](https://www.npmjs.com/package/download) to install project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To clone project, run command: 
+```bash
+git clone https://github.com/n-sare/e-commerce-fe-react.git
+```
+After cloning project to your local computer, cd into that project using terminal and then run:
 
-### `npm test`
+```bash
+npm install
+```
+There is a db.json file in public folder that mocks backend, it needs to be run via json-server (which is a dependency). So after making sure json-server is installed, cd into public file and run:
+```bash
+json-server --watch db.json
+```
+Cd into project folder and run:
+```bash
+npm start
+```
+### Sign up Page
+![image](https://user-images.githubusercontent.com/34991897/131095032-bf6d304c-9c27-4d4e-945e-987ce13ded3a.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sign in Page
+![image](https://user-images.githubusercontent.com/34991897/131095374-d3c08a91-637c-439f-80b2-a43e97154cfe.png)
 
-### `npm run build`
+### Home Page
+![image](https://user-images.githubusercontent.com/34991897/131100744-392eaac5-e0cf-4d80-91ce-5947022cb59c.png)
+![image](https://user-images.githubusercontent.com/34991897/131100819-928f2935-d22f-4d22-a342-9a297dc54f61.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Products Page
+![image](https://user-images.githubusercontent.com/34991897/131100978-ba9adfa4-b052-4291-9692-0fe43bbb415e.png)
+![image](https://user-images.githubusercontent.com/34991897/131101059-7325210a-6ab8-4a9d-8517-534ae4fe931a.png)
 
-### `npm run eject`
+### Product Detail Page
+![image](https://user-images.githubusercontent.com/34991897/131101216-95b2e2f6-77d8-40d5-ba04-00d23a1f1e8f.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### User Cart Page
+![image](https://user-images.githubusercontent.com/34991897/131101471-501e6d27-81e1-4639-887c-cdb7ef5b95bd.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
