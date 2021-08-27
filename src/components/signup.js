@@ -33,32 +33,32 @@ export default function Signup() {
     return (
         <div className="card bg-light">
             <article className="card-body mx-auto" style={{ maxWidth: "400px" }}>
-                <h4 className="card-title mt-3 text-center" style={{ color: "#FA1E0E", fontWeight: "bold" }}>Hesap Oluştur</h4>
-                <p className="text-center" style={{ color: "#FA1E0E" }}>Kendinize ücretsiz bir hesap oluşturun.</p>
+                <h4 className="card-title mt-3 text-center" style={{ color: "#7C203A", fontWeight: "bold" }}>Hesap Oluştur</h4>
+                <p className="text-center" style={{ color: "#7C203A" }}>Kendinize ücretsiz bir hesap oluşturun.</p>
 
 
                 <form onSubmit={handleSubmit}>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input name="" className="form-control" placeholder="Ad" type="text" onChange={(e) => setName(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-user" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input name="" className="form-control" placeholder="Soyad" type="text" onChange={(e) => setSurname(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-envelope" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-envelope" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input name="" className="form-control" placeholder="E-posta Adresi" type="email" onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-phone" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-phone" style={{ color: "#7C203A" }}></i> </span>
                         </div>
 
                         <input name="" className="form-control" placeholder="Telefon Numarası" type="text" onChange={(e) => setPhone(e.target.value)} />
@@ -66,13 +66,13 @@ export default function Signup() {
 
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input className="form-control" placeholder="Parola" type="password" onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input className="form-control" placeholder="Parola (Tekrar)" type="password" onChange={(e) => setRepeatedPassword(e.target.value)} />
                         <hr></hr>
@@ -81,7 +81,7 @@ export default function Signup() {
                     <div className="form-group">
                         <button type="submit" className="btn btn-block custom-btn-warning"> Hesap Oluşturun  </button>
                     </div>
-                    <p className="text-center" style={{ color: "#BD2000" }}>Hesabınız var mı? <a href="/login" style={{ color: "#BD2000" }}>Giriş Yapın.</a> </p>
+                    <p className="text-center" style={{ color: "#7C203A" }}>Hesabınız var mı? <a href="/login" style={{ color: "#7C203A" }}>Giriş Yapın.</a> </p>
                 </form>
             </article>
         </div>

@@ -38,9 +38,7 @@ function Root() {
           <Route exact path="/products/electronics">
             <Products categoryOfComponent={"electronics"} />
           </Route>
-          <Route exact path="/usercart">
-            <UserCartContainer />
-          </Route>
+          <Route exact path="/usercart" component={() => (isLoggedIn ? <UserCartContainer /> : <LoginPage />)} />
           <Route exact path="/login" component={() => (isLoggedIn ? <HomePage /> : <LoginPage />)} />
           <Route exact path="/signup" component={() => (isLoggedIn ? <HomePage /> : <SignupPage />)} />
 

@@ -28,6 +28,8 @@ function UserCartContainer() {
     //a nullsafe useEffect usage
     useEffect(() => {
 
+        const { user } = userData;
+
         dispatch(getUserCart(user[0]?.id));
 
     }, [user[0]?.id]);
@@ -45,7 +47,7 @@ function UserCartContainer() {
                                 <div class="cart_title">Sepetiniz</div>
                                 <div class="cart_items">
                                     <ul class="cart_list">
-                                        {result.map((c, key) => <div key={key}><SingleCart key={key} title={c.title} image={c.image} price={c.price} /><hr /></div>)}
+                                        {result.map((c, key) => <div key={key}><SingleCart key={key} title={c.title} image={c.image} price={c.price} productId={c.id} userId={user[0].id} /><hr /></div>)}
 
 
 

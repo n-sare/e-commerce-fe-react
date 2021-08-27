@@ -117,7 +117,7 @@
 }
 
 .custom-btn-warning {
-    background: none #FA1E0E;
+    background: none #7C203A;
     color: #ffffff;
     fill: #ffffff;
     border: none;
@@ -129,7 +129,7 @@
 
 .custom-btn-warning:hover,
 .custom-btn-warning:disabled {
-    background: none #FFBE0F;
+    background: none #FF9F68;
     color: #ffffff;
     box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
 }

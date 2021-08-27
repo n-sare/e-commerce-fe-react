@@ -20,6 +20,9 @@ export const userCartReducer = (state = { usercart: [] }, action) => {
   switch (action.type) {
     case GET_USER_CART:
       return { ...state, usercart: action.payload }
+    case REMOVE_FROM_CART:
+      console.log(action.payload.id)
+      return { ...state, usercart: state.filter((i) => i.id !== action.payload.id) }
     case GET_USER_CART_ERROR:
       return { error: action.payload }
     default:

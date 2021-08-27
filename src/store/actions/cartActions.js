@@ -7,6 +7,7 @@ export const getUserCart = (userId) => async (dispatch) => {
     axios.get("http://localhost:3000/carts").then(response => response.data)
       .then(responseData => {
         const userCart = responseData.filter(cart => cart.userId == userId);
+
         dispatch({ type: GET_USER_CART, payload: userCart })
       })
 
@@ -18,6 +19,7 @@ export const getUserCart = (userId) => async (dispatch) => {
     })
   }
 }
+
 
 //Action to add product to cart
 export const addToCard = (userId, productId) => async (dispatch) => {
@@ -38,3 +40,14 @@ export const addToCard = (userId, productId) => async (dispatch) => {
   }
 }
 
+//action to remove from cart
+export const removeFromCart = (cartId) => async (dispatch) => {
+  const url = "http://localhost:3000/carts/" + cartId
+  try {
+    const { deleted } = await axios.delete(url)
+      .then(() => dispatch({ type: REMOVE_FROM_CART, payload: deleted }))
+  } catch (error) {
+
+    console.log(error)
+  }
+}

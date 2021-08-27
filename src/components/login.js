@@ -29,21 +29,21 @@ export default function Login() {
     return (
         <div className="card bg-light ">
             <article className="card-body mx-auto" style={{ maxWidth: "400px" }}>
-                <h4 className="card-title mt-3 text-center" style={{ color: "#FA1E0E", fontWeight: "bold" }}>Giriş Yap</h4>
+                <h4 className="card-title mt-3 text-center" style={{ color: "#7C203A", fontWeight: "bold" }}>Giriş Yap</h4>
 
 
                 <form onSubmit={handleSubmit} className="form-login">
 
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-envelope" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-envelope" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input name="" className="form-control" placeholder="E-posta Adresi" type="email" onChange={(e) => setEmail(e.target.value)} />
                     </div>
 
                     <div className="form-group input-group">
                         <div className="input-group-prepend">
-                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#FA1E0E" }}></i> </span>
+                            <span className="input-group-text"> <i className="fa fa-lock" style={{ color: "#7C203A" }}></i> </span>
                         </div>
                         <input className="form-control" placeholder="Şifre" type="password" onChange={(e) => setPassword(e.target.value)} />
                     </div>
@@ -51,7 +51,7 @@ export default function Login() {
                     <div className="form-group">
                         <button type="submit" className="btn btn-block custom-btn-warning" disabled={!validateForm()}> Giriş Yap  </button>
                     </div>
-                    <p className="text-center" style={{ color: "#BD2000" }}>Hesabınız yok mu? <a href="/signup" style={{ color: "#BD2000" }}>Kaydolun.</a> </p>
+                    <p className="text-center" style={{ color: "#7C203A" }}>Hesabınız yok mu? <a href="/signup" style={{ color: "#7C203A" }}>Kaydolun.</a> </p>
                 </form>
             </article>
         </div>

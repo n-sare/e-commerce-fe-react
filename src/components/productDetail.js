@@ -64,7 +64,7 @@ const ProductDetail = (props) => {
 
 
                                 <div className="action text-center">
-                                    <button className="add-to-cart btn custom-btn-warning" type="button" onClick={handleCart}>Sepete ekle</button>
+                                    <button className=" btn custom-btn-warning" type="button" onClick={handleCart}>Sepete ekle</button>
                                 </div>
                             </div>
                         </div>

@@ -87,7 +87,12 @@ ul {
 
 .cart_item_text {
     font-size: 18px;
-    margin-top: 35px
+    margin-top: 35px;
+    display: block;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .cart_item_text span {

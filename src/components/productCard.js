@@ -35,7 +35,7 @@ const ProductCard = (props) => {
             <div class="card-body">
                <div class="clearfix mb-3"> <span class="float-start price-hp">{price} TL</span> <span class="float-end"> <Link to={`/productdetail/${id}`} class="text-decoration-none text-dark"><a class="text-muted small" href="#">Detaylar</a></Link></span> </div>
                <Link to={`/productdetail/${id}`} class="text-decoration-none text-dark"><h5 class="card-title font-weight-normal">{title}</h5></Link>
-               <div class="text-center my-4"> <a href="#" class="btn btn-warning custom-btn custom-btn-warning" onClick={handleCart}>Sepete Ekle</a> </div>
+               <div class="text-center my-4"> <a href="#" class="btn custom-btn custom-btn-warning" onClick={handleCart}>Sepete Ekle</a> </div>
                <div class="clearfix mb-1"> <span class="float-start"><i class="far fa-question-circle"></i></span> <span class="float-end"><i class="fas fa-plus"></i></span> </div>
             </div>
          </div>

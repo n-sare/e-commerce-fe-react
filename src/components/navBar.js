@@ -44,8 +44,8 @@ function NavbarComponent() {
 
     <Navbar collapseOnSelect expand="lg" bg="light" variant="dark">
 
-      <Link to="/"><i class="fab fa-shopware fa-3x" style={{ color: "#BD2000" }}></i></Link>
-      <Navbar.Brand href="/" style={{ color: "#BD2000", fontWeight: "bold" }}>MeShop!</Navbar.Brand>
+      <Link to="/"><i class="fab fa-shopware fa-3x" style={{ color: "#7C203A" }}></i></Link>
+      <Navbar.Brand href="/" style={{ color: "#7C203A", fontWeight: "bold" }}>MeShop!</Navbar.Brand>
 
       <Container>
 
@@ -76,11 +76,11 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
 
-        {isLoggedIn ? <Navbar.Brand href="/">
+        <Navbar.Brand href="/">
           <a href="/usercart"><i class="fas fa-shopping-cart text-muted" style={{ color: "#f2f2f2" }}></i>
             {count > 0 ? <small><span class="badge rounded-pill badge-notification bg-danger">{count}</span></small> : null}
           </a>
-        </Navbar.Brand> : null}
+        </Navbar.Brand>
 
 
       </Container>

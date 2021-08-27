@@ -94,7 +94,7 @@
     font-weight: bold; }
   
   .checked, .price span {
-    color: #BD2000; }
+    color: #7C203A; }
   
   .product-title, .rating, .product-description, .price, .vote, .sizes {
     margin-bottom: 15px; }
@@ -141,12 +141,7 @@
   .orange {
     background: #ff9f1a; }
   
-  /* .green {
-    background: #85ad00; } CATEGORİESHOMEPAGE2'Yİ OVERRIDE EDIYOR*/
-  
-  /* .blue {
-    background: #0076ad; }
-   */
+
   .tooltip-inner {
     padding: 1.3em; }
   
